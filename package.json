@@ -1,0 +1,32 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "description": "有关前端开发的一些模版",
+  "main": "index.js",
+  "scripts": {
+    "git": "git add . && git cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eronieya/project_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eronieya/project_template/issues"
+  },
+  "homepage": "https://github.com/Eronieya/project_template#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
+    "commitlint": "^17.1.2",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}

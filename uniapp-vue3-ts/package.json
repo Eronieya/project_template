@@ -1,6 +1,11 @@
 {
   "name": "uniapp-ts-vue3",
   "version": "0.0.0",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "scripts": {
     "dev:app": "uni -p app",
     "dev:custom": "uni -p",
@@ -54,11 +59,21 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.1.0",
     "@dcloudio/types": "^3.0.7",
     "@dcloudio/uni-automator": "3.0.0-alpha-3040820220424001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3040820220424001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3040820220424001",
+    "commitizen": "^4.2.5",
+    "commitlint": "^17.1.2",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.1",
     "typescript": "^4.7.4",
     "vite": "^2.9.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
