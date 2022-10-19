@@ -19,7 +19,7 @@ module.exports = {
   // override the messages, defaults are as follows
   messages: {
     type: "请选择提交类型:",
-    // scope: '请输入文件修改范围(可选):',
+    scope: '请输入文件修改范围(可选):',
     // used if allowCustomScopes is true
     customScope: "请输入修改范围(可选):",
     subject: "请简要描述提交(必填):",
