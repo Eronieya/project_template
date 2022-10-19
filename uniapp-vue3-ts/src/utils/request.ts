@@ -2,15 +2,11 @@
  * 用于封装 axios 请求, 添加拦截器等
  */
 import axios, { AxiosInstance } from "axios";
+import { BASE_URL } from "./config";
 
 const service: AxiosInstance = axios.create({
-  baseURL: "http://192.168.2.9",
+  baseURL: BASE_URL,
   withCredentials: true,
-  proxy: {
-    protocol: "http",
-    host: "192.168.2.9",
-    port: 80,
-  },
 });
 
 // 添加请求拦截器
