@@ -1,12 +1,9 @@
 {
   "name": "uniapp-ts-vue3",
   "version": "0.0.0",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "scripts": {
+    "git": "git add . && git cz",
+    "prepare": "husky install",
     "dev:app": "uni -p app",
     "dev:custom": "uni -p",
     "dev:h5": "uni",
