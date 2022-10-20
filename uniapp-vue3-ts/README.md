@@ -9,4 +9,3 @@ uniapp-vue3-ts是基于__uniapp__搭建的一个项目模版。
 * pinia
 * axios
 * typescript
-* commitizen & commitlint & husky
